@@ -22,6 +22,10 @@ require_once 'alumnoDAO.php';
   </form>
 
 <?php
+  if (isset ($_GET['id_alumno'])){
+    $eliminarAlumnos = new AlumnoDAO;
+    $eliminarAlumnos -> eliminarAlumnos();
+  }
   if (empty($_POST['buscar'])){
     $mostrar_alumnos=new AlumnoDAO;
     echo $mostrar_alumnos->mostrarAlumnos();
