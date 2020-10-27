@@ -26,6 +26,7 @@ require_once 'alumnoDAO.php';
     $eliminarAlumnos = new AlumnoDAO;
     $eliminarAlumnos -> eliminarAlumnos();
   }
+
   if (empty($_POST['buscar'])){
     $mostrar_alumnos=new AlumnoDAO;
     echo $mostrar_alumnos->mostrarAlumnos();
