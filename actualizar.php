@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="estilos//style.css">
   <script  src="../js/code.js"></script>
 </head>
+<a class="boton_personalizado"  href="zona.admin.php">Inicio</a><br><br>
 <body>
     <?php
     
@@ -25,7 +26,7 @@
 <div class="row">
     <div class="form">
       <form action="actualizar.php" method="POST" onsubmit="return validacionForm1()">
-        <input id="idalu" name="idalu" style="display=none;"type="text" value=<?php echo $alumno['id_alumno']?>>
+        <input id="idalu" name="idalu" style="display=none;"type="hidden" value=<?php echo $alumno['id_alumno']?>>
         <label>Nombre:</label><br>
         <input type="text" name="name" id="name" value="<?php echo $alumno['nombre_alumno'];?>" disabled><br>
         <label>1r apellido:</label><br>

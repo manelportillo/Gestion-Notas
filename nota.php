@@ -4,6 +4,7 @@ class Nota {
     private $id_nota;
     private $nota_alumno;
     private $id_alumno;
+    static $nota_media;
 
     function __construct($id_alumno,$nombre_asignatura,$id_nota,$nota_alumno)
     {
@@ -89,6 +90,26 @@ class Nota {
     public function setId_alumno($id_alumno)
     {
         $this->id_alumno = $id_alumno;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of nota_media
+     */ 
+    public function getNota_media()
+    {
+        return $this->nota_media;
+    }
+
+    /**
+     * Set the value of nota_media
+     *
+     * @return  self
+     */ 
+    public function setNota_media($nota_media)
+    {
+        $this->nota_media = $nota_media;
 
         return $this;
     }
