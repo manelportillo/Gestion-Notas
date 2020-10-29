@@ -10,7 +10,7 @@
 <a class="boton_personalizado"  href="zona.admin.php">Inicio</a><br><br>
 <body>
     <?php
-    
+    require_once 'sessioncontroller.php';
     require_once "notaDAO.php"; 
 
     if (isset ($_POST['nota0'])) {

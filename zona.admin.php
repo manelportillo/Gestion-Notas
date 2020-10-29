@@ -14,6 +14,7 @@ require_once 'alumnoDAO.php';
 
   <a class="boton_personalizado"  href="insertar_alumno.php">Crear alumnos</a><br><br>
   <a class="boton_personalizado"  href="info_adicional.php">Información adicional</a><br><br>
+  <a class="boton_personalizado4"  href="logoutController.php">Logout</a><br><br>
   <form action="zona.admin.php" method="POST">
     <label for="name"> Nombre:<label><br>
     <input type="text" id="name_alumno" name="name_alumno" placeholder="Nombre"><br> 
