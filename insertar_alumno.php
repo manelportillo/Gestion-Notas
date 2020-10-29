@@ -13,6 +13,7 @@ require_once 'alumnoDAO.php';
 ?>
 <div>
   <a class="boton_personalizado"  href="zona.admin.php">Inicio</a><br><br>
+  
   <form action="insertar_alumno.php" method="POST">
     <label for="name">Nombre</label>
     <input type="text" id="name" name="name" placeholder="Nombre del alumno..." required>
